@@ -29,3 +29,12 @@ Dancer.prototype.setPosition = function(top, left) {
   };
   this.$node.css(styleSettings);
 }
+
+Dancer.prototype.lineUp = function(pageHeight){
+  var top = pageHeight * Math.random() + 'px';
+  var left = '280px';
+  var style = {top: top, left: left}
+  var node = this.$node;
+
+  node.css(style);
+};

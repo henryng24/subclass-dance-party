@@ -27,7 +27,25 @@ $(document).ready(function(){
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
-    $('body').append(dancer.$node);
+
+    window.dancers.push(dancer);
+
+    $('body').append(dancer.$node);    
+  });
+
+  $("body").on("mouseover", ".rick", function(event) {
+    $(this).addClass("rick2");
+  });
+
+  $("body").on("mouseleave", ".rick", function(event) {
+    $(this).removeClass("rick2");
+  });
+
+  $(".line-up").on("click", function(event){
+    for(var i = 0; i < window.dancers.length; i++){
+      var dancer = window.dancers[i];
+      dancer.lineUp($("body").height());
+    }
   });
 });
 

@@ -5,9 +5,13 @@ body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
+  font-family: arial, sans-serif;
+  background: url(https://shariqaahmed.files.wordpress.com/2013/09/titanic_sinking.png);
+  background-size: cover;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
+  text-decoration: none;
 }
 .title, .addDancerButton{
   padding:5px 12px;
@@ -21,7 +25,24 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
-  position:absolute;
+  border: 10px solid red;
+  border-radius: 10px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+
+  -moz-transition: all 500ms linear;
+  -webkit-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  transition: all 500ms linear;
 }
+.rick{
+  width: 250px;
+  height: 188px;
+  background: url(http://2.bp.blogspot.com/-baqmxAt8YHg/UMRuNx6uNdI/AAAAAAAAD1s/TzmvfnYyP8E/s1600/rick-astely.gif);
+}
+.rick2{
+  background: url(http://stream1.gifsoup.com/view2/1759854/rick-astley-lolol-o.gif);
+}
+
+

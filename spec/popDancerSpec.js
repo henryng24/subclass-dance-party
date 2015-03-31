@@ -13,16 +13,16 @@ describe("PopDancer", function() {
     expect(popDancer.$node).to.be.an.instanceof(jQuery);
   });
 
-  it("should have a changeColour method", function() {
-    expected(popDancer.changeColor).to.be.a('function');
+  it("should have a changeColor method", function() {
+    expect(popDancer.changeColor).to.be.a('function');
   });
 
   it("should change colors every step", function() {
     sinon.spy(popDancer, 'changeColor');
-    var oldColour = popDancer.currentColour;
+    var oldColour = popDancer.currentColor;
     popDancer.step();
     expect(popDancer.changeColor.called).to.be.true;
-    expect(oldColour).to.not.equal(popDancer.currentColour);
+    expect(oldColour).to.not.equal(popDancer.currentColor);
   });
 
   describe("dance", function(){
