@@ -44,5 +44,19 @@ body, a:link, a:visited, a:active{
 .rick2{
   background: url(http://stream1.gifsoup.com/view2/1759854/rick-astley-lolol-o.gif);
 }
-
-
+.sinking-boat{
+  background: url(http://37.media.tumblr.com/7faa2e6ae724dc3ec38785c4b2b469d4/tumblr_n320ppcpyF1sv7laoo1_500.gif);
+}
+audio{
+  display: none;
+}
+#link-submit{
+  float:right;
+  margin-top: 5px;
+  margin-right: 0px;
+}
+.user-dancer{
+  background-size: cover;
+  width: 250px;
+  height: 188px;
+}
